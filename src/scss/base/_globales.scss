@@ -67,6 +67,16 @@ img {
     width: 90%;
     margin: 0 auto;
 }
+.heading-blanco {
+    @extend h2;
+    color: v.$blanco;
+    span {
+        color: v.$blanco;
+    }
+    &::after {
+        display: none;
+    }
+}
 .text-center {
     text-align: center;
 }
