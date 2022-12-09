@@ -7,12 +7,16 @@ const autoprefixer = require('autoprefixer');
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const avif =require('gulp-avif');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('cssnano');
 
 function css (done) {
     src('src/scss/**/*.scss')
         .pipe(plumber())
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(postcss([autoprefixer()]))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'))
 
     done();
