@@ -1,0 +1,85 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuenteSecundaria;
+    font-size: 1.6rem;
+    background-color: v.$cafeClaro;
+}
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+    font-family: v.$fuentePrincipal;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+    color: v.$primario;
+    span {
+        color: v.$secundario;
+        font-size: 1.8rem;
+        display: block;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+        background-image: url(../img/cafe.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+h3 {
+    font-size: 3.2rem;
+}
+p {
+    color: v.$negro;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.heading-blanco {
+    @extend h2;
+    color: v.$blanco;
+    span {
+        color: v.$blanco;
+    }
+    &::after {
+        display: none;
+    }
+}
+.text-center {
+    text-align: center;
+}
+.bg-primario {
+    background-color: v.$primario;
+}

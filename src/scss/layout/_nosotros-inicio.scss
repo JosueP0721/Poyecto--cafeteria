@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-principal {
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+    @include m.tablet {
+        padding: 10rem;
+        margin-top: -10rem;
+        position: relative;
+    }
+}
+.iconos {
+    margin-top: 5rem;
+    .listado-iconos {
+        @include m.tablet {
+            @include m.grid(3, 2rem)
+        }
+        li {
+            img {
+                margin: 0 auto;
+                width: 12rem;
+            }
+            p {
+                font-family: v.$fuenteTerciaria;
+                font-size: 3.2rem;
+                color: v.$primario;
+            }
+        }
+    }
+}
