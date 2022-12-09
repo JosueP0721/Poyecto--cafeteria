@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <header class="header header-inicio">
+    <header class="header header-galeria">
         <div class="contenido-header contenedor">
             <div class="barra">
                 <div class="logo">
                     <img src="build/img/logo.svg" alt="cafe logo">
                 </div>
                 <nav class="nav-principal">
-                    <a class="activo" href="index.html">Inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="nosotros.html">Nosotros</a>
                     <a href="proceso.html">Proceso</a>
                     <a href="menu.html">Menú</a>
-                    <a href="galeria.html">Galería</a>
+                    <a class="activo" href="galeria.html">Galería</a>
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div>
@@ -35,35 +35,8 @@
             </div>
         </div>
     </header>
-    <main class="contenedor text-center contenido-principal">
-        <section class="conoce">
-            <h2><span>Conoce más</span>sobre nosotros</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, possimus ipsam corporis ipsum repudiandae,
-                ullam ad temporibus nulla quos obcaecati labore laboriosam. Dolorem placeat eum iure, obcaecati sit
-                aliquid
-                eius? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore commodi blanditiis!
-                Corporis minus beatae illum, ea qui illo ad ipsa pariatur, iure autem perferendis, veritatis placeat
-                maxime.
-                Beatae, et.</p>
-        </section>
-        <section class="iconos">
-            <ul class="listado-iconos">
-                <li>
-                    <img src="build/img/icono_cafe.svg" alt="icono cafe">
-                    <p>Café</p>
-                </li>
-                <li>
-                    <img src="build/img/icono_postre.svg" alt="icono postre">
-                    <p>Postres</p>
-                </li>
-                <li>
-                    <img src="build/img/icono_te.svg" alt="iocno te">
-                    <p>Té</p>
-                </li>
-            </ul>
-        </section>
-        <section class="experiencia">
-            <h2><span>Vive la</span>experiencia</h2>
+    <main class="contenedor contenido-principal">
+        <h2><span>Vive la</span>experiencia</h2>
             <div class="galeria">
                 <picture class="imagen">
                     <source srcset="build/img/galeria/galeria_01.avif" type="image/avif">
@@ -126,88 +99,8 @@
                         alt="imagen galeria">
                 </picture>
             </div>
-        </section>
     </main>
-    <section class="nuestro-menu">
-        <h2 class="heading-blanco"><span>Nuestro delicioso</span>Menú</h2>
-        <div class="contenedor grid-menu">
-            <section class="menu cafe">
-                <h3>Café</h3>
-                <ul>
-                    <li>
-                        <p>Café Latte <span>Café Espresso con leche caliente evaporada</span> </p>
-                        <p class="precio">$25</p>
-                    </li>
-                    <li>
-                        <p>Café Mocha <span>Espresso con crema batida</span> </p>
-                        <p class="precio">$30</p>
-                    </li>
-                    <li>
-                        <p>Café Americano <span>Café Negro</span> </p>
-                        <p class="precio">$30</p>
-                    </li>
-                    <li>
-                        <p>Capuccino<span>Espresso con una capa suave de espuma</span> </p>
-                        <p class="precio">$25</p>
-                    </li>
-                    <li>
-                        <p>Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span> </p>
-                        <p class="precio">$29</p>
-                    </li>
-                    <li>
-                        <p>Mocha Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
-                        <p class="precio">$35</p>
-                    </li>
-                    <li>
-                        <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
-                        <p class="precio">$39</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="menu comida">
-                <h3>comida</h3>
-                <ul>
-                    <li>
-                        <p>Baguette de Pollo <span>Delicioso Baguette con pollo a la plancha</span> </p>
-                        <p class="precio">$45</p>
-                    </li>
-                    <li>
-                        <p>Baguette Pollo y Queso <span>Baguette combinado con Pollo y Queso Manchego</span> </p>
-                        <p class="precio">$50</p>
-                    </li>
-                    <li>
-                        <p>Baguette con Tocino<span>Baguette con especias y verduras, además de tocino</span> </p>
-                        <p class="precio">$50</p>
-                    </li>
-                    <li>
-                        <p>Baguette de Jamón<span>Delicioso Baguette con Jamón y Especias</span> </p>
-                        <p class="precio">$65</p>
-                    </li>
-                    <li>
-                        <p>Baguette con Jamón, Queso y Tocino<span>El especial de la casa</span> </p>
-                        <p class="precio">$69</p>
-                    </li>
-                    <li>
-                        <p>Sandwich de Pollo<span>Delicioso sandwich con Pollo y especies</span> </p>
-                        <p class="precio">$65</p>
-                    </li>
-                    <li>
-                        <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
-                        <p class="precio">$59</p>
-                    </li>
-                </ul>
-            </section>
-        </div>
-    </section>
-    <section class="nuestros-testimoniales contenedor">
-        <h2><span>Lo que dicen nuestros</span>Clientes</h2>
-        <div class="testimonial">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque dolorem modi maiores blanditiis facilis
-                molestiae, architecto sapiente rerum ratione doloremque quam, nihil esse! Molestias incidunt minima quae
-                sed velit porro.</p>
-                <p class="autor">- Josué Palma</p>
-        </div>
-    </section>
+
     <footer class="footer">
         <div class="contenedor footer-contenido">
             <div class="footer-box ubicacion">
